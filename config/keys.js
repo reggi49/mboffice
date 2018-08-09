@@ -5,6 +5,7 @@ if (process.env.NODE_ENV === 'production'){
     mongoURI  : process.env.MONGO_URI,
     cookieKey : process.env.COOKIE_KEY
   };
+  console.log('production');
 }else{
   module.exports = require('./dev');
 }
